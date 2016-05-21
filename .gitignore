@@ -1,3 +1,6 @@
+# Compiled files
+*.cgi
+
 # Object files
 *.o
 *.ko
