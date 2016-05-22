@@ -11,7 +11,7 @@ Database::~Database(){
 
 void Database::add(Persondata* p){
 	std::ostringstream sql;
-	sql << "INSERT INTO participants VALUE (NULL, " << p->getName() << ", " << p->getEmail() << ");";
+	sql << "INSERT INTO participants VALUES (NULL, '" << p->getName() << "', '" << p->getEmail() << "');";
 	char *zErrMsg = 0;
 	int rc = sqlite3_exec(db, sql.str().c_str(), 0, 0, &zErrMsg);
 	if(rc != SQLITE_OK){
