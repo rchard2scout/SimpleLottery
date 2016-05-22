@@ -12,5 +12,7 @@ public:
 	Persondata(std::string name, std::string email);
 	virtual ~Persondata();
 	json getJson();
+	std::string getName();
+	std::string getEmail();
 };
 #endif //PERSONDATA_H

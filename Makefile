@@ -1,5 +1,5 @@
 all:
-	g++ -Wall cgi-bin/*.cpp -o cgi-bin/main.cgi -std=c++11 -lcgicc
+	g++ -Wall cgi-bin/*.cpp -o cgi-bin/main.cgi -std=c++11 -l cgicc -l sqlite3
 
 clean:
 	rm -f cgi-bin/main.cgi

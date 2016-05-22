@@ -11,3 +11,11 @@ json Persondata::getJson(){
 	j["email"] = email;
 	return j;
 }
+
+std::string Persondata::getName(){
+	return name;
+}
+
+std::string Persondata::getEmail(){
+	return email;
+}
