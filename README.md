@@ -1,8 +1,9 @@
 # Simple Lottery
 This is a simple lottery web application.
 
-This code has been created for a test assignment for Bynder. It is not meant
-for public release.
+This code has been created as a test assignment. It is not meant for public
+release, but of course you're free to do whatever you want with this. (Also see
+[the license](LICENSE)
 
 What is in here:
  - adding participants
@@ -11,8 +12,8 @@ What is in here:
 
 What is not in here:
  - removing participants
- - SQL injection prevention
- - Error checking
+ - SQL injection prevention (or any other kind of security)
+ - error checking
 
 To build and run this, you'll need:
  - sqlite3
