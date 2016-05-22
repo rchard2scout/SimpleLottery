@@ -1,5 +1,5 @@
 all:
-	g++ -Wall cgi-bin/*.cpp -o cgi-bin/main.cgi -std=c++11
+	g++ -Wall cgi-bin/*.cpp -o cgi-bin/main.cgi -std=c++11 -lcgicc
 
 clean:
 	rm -f cgi-bin/main.cgi
