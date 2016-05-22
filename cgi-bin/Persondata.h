@@ -1,8 +1,6 @@
 #ifndef PERSONDATA_H
 #define PERSONDATA_H
 #include <string>
-#include "json.hpp"
-using json = nlohmann::json;
 
 class Persondata{
 private:
@@ -11,7 +9,6 @@ private:
 public:
 	Persondata(std::string name, std::string email);
 	virtual ~Persondata();
-	json getJson();
 	std::string getName();
 	std::string getEmail();
 };
