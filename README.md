@@ -17,8 +17,10 @@ What is not in here:
  - error checking
 
 To build and run this, you'll need:
- - sqlite3
- - cgicc
- - lighttpd (or another webserver) with cgi enabled.
- - an sqlite database called "lottery.db" in /var/www/cgi-bin/ that's writable
-   by lighttpd (on Debian-based distributions: user www-data)
+ - `sqlite3`
+ - `cgicc`
+ - `lighttpd` (or another webserver) with cgi enabled.
+ - An sqlite3 database called "lottery.db" in `/var/www/cgi-bin/` that's
+   writable by lighttpd (on Debian-based distributions: user `www-data`).
+   This database has a single table "participants": `CREATE TABLE
+   participants(id integer primary key asc, name text, email text);`
